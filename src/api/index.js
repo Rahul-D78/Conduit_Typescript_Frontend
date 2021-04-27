@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://3.85.114.238/' });
+const API = axios.create({ baseURL: 'https://conduitapi.tk/' });
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')) {
